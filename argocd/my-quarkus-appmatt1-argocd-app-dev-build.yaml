@@ -3,13 +3,13 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: my-quarkus-appmatt1-dev-build
-  namespace: janus-argocd
+  namespace: demo
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd.argoproj.io/sync-wave: "-1"
 spec:
-  project: janus
+  project: default
   source:
     repoURL: https://github.com/ocp-rhdh-poc/my-quarkus-appmatt1-gitops.git
     targetRevision: HEAD
