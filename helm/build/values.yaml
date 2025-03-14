@@ -1,0 +1,21 @@
+app:
+  name: my-quarkus-appmatt1
+  namespace: my-quarkus-appmatt1-dev
+  cluster: .apps.67c1045bd8856f9bb04f2985.am1.techzone.ibm.com
+
+git:
+  branch: main
+  repo: https://github.com/ocp-rhdh-poc/my-quarkus-appmatt1.git
+  org: ocp-rhdh-poc
+  name: my-quarkus-appmatt1
+  host: github.com
+  token: ''
+  webhookSecret: ''
+
+
+image:
+  registry: Openshift
+  organization: 
+  host: image-registry.openshift-image-registry.svc:5000
+  name: my-quarkus-appmatt1
+  tag: latest
